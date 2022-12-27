@@ -86,9 +86,9 @@ section {
 
 .main {
     height: 360px;
-    background-image: url("https://www.fun-coding.org/assets_lms/images/photodune-4161018-group-of-students-m.jpg");
+    background-image: url("../img/main.jpg");
     background-size: cover;
-    background-position: center 10%;
+    background-position: center 30%;
     background-repeat: no-repeat;
     z-index: 1;
 }
@@ -96,10 +96,26 @@ section {
 .main-container {
     width: 100%;
     height: 100%;
-    background-color: rgb(47,48,89);
-    opacity: 0.8;
+    background-color: rgb(27, 27, 64);
+    opacity: 0.6;
     z-index: 2;
+    margin-top:60px;
 }
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0.8rem;
+}
+
+.message{
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    line-height: 2rem;
+}
+
 
 .title-container {
     padding-top: 100px;
