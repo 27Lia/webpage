@@ -109,6 +109,11 @@ section {
     margin-bottom: 0.8rem;
 }
 
+.title-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 .message{
     font-size: 1.4rem;
     font-weight: normal;
@@ -116,13 +121,73 @@ section {
     line-height: 2rem;
 }
 
-
-.title-container {
-    padding-top: 100px;
-    padding-bottom: 100px;
+.skill-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+.skill {
+    width: 20%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 9px;
+    padding: 1rem 1rem;
+    margin: 1rem;
+    box-shadow: 10px 10px 10px -6px gray;
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    margin: 0 10px;
+}
+.skill-title {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.skill-name {
+    font-weight: bold;
+    color: black;
+    margin-bottom: 0.2rem;
+}
+
+.skill-usage {
+    font-size: 0.9rem;
+    color: gray;
+
+}
+
+.swimming-style {
+    color: black;
+
+}
+
+.plane-style {
+    color:black;
+}
+
+.card-style {
+    color: black;
+}
+
+.shop-style {
+    color: black;
+}
+
+
 @media only screen and (min-width:1200px) {
     .inner {
         max-width: 1200px;
+    }
+}
+
+@media only screen and (max-width:980px) {
+    .skill-container {
+        display: none;
     }
 }
