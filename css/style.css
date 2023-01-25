@@ -38,6 +38,7 @@ a:hover {
     height: 100%;
     margin: 0 auto;
     padding: 0 2rem;
+    overflow: hidden;
 }
 
 header {
@@ -179,7 +180,106 @@ section {
     color: black;
 }
 
+.roadmap-container {
+    width: 100%;
+    margin-top: 2rem;
+}
 
+.roadmap-title-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.roadmap-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: black;
+}
+
+.arrow-container { 
+    display: flex;
+}
+
+.slide-prev {
+    font-size: 2em;
+    cursor: pointer;
+    color: rgb(47, 48, 89);
+    margin: 0;
+  }
+  
+  .slide-next {
+    font-size: 2em;
+    cursor: pointer;
+    color: #cfd8dc;
+    margin: 0;
+  }
+
+  .class-list {
+    display: flex;
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .class-card {
+    width: 240px;
+    box-shadow: 10px 10px 10px -6px gray;
+    border-radius: 8px;
+    margin: 0 10px;
+  }
+
+  .image{
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+    height: 150px;
+  }
+
+  .class-container {
+    width: 100%;
+    padding: 0.5rem 1rem 1rem 1rem;
+  }
+   
+  .class-skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .class-type{
+    font-size: 0.9rem;
+    color: gray;
+  }
+
+  .class-format{
+    font-size: 0.9rem;
+    color: white;
+    background-color: blue;
+    padding: 0.2rem;
+  }
+
+  .class-desc {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .class-title {
+    font-weight: bold;
+    color: rgb(57, 38, 11);
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0.2rem;
+  }
+
+  .class-detail {
+    font-size: 0.9rem;
+    color: rgb(35, 33, 33);
+  }
 @media only screen and (min-width:1200px) {
     .inner {
         max-width: 1200px;
