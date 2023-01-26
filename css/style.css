@@ -1,4 +1,4 @@
-* {
+ * {
     box-sizing: border-box;
 }
 
@@ -139,6 +139,12 @@ section {
     padding: 1rem 1rem;
     margin: 1rem;
     box-shadow: 10px 10px 10px -6px gray;
+    transition: 0.4s;
+}
+
+.skill:hover {
+    transform: translate(0,-5px);
+
 }
 
 .skill-icon {
@@ -230,7 +236,13 @@ section {
     box-shadow: 10px 10px 10px -6px gray;
     border-radius: 8px;
     margin: 0 10px;
+    transition: 0.4s;
   }
+
+.class-card:hover {
+    box-shadow: 10px 10px 10px 0px gray;
+    transform: translate(0, -5px);
+}
 
   .image{
     width: 100%;
@@ -261,7 +273,7 @@ section {
     padding: 0.2rem;
   }
 
-  .class-desc {
+  .class-desc { 
     width: 100%;
     margin-top: 1rem;
   }
@@ -280,6 +292,14 @@ section {
     font-size: 0.9rem;
     color: rgb(35, 33, 33);
   }
+
+  .roadmap-desc {
+    display: visible;
+  }
+  
+  .li a:hover {
+    cursor: pointer;
+  }
 @media only screen and (min-width:1200px) {
     .inner {
         max-width: 1200px;
@@ -288,6 +308,9 @@ section {
 
 @media only screen and (max-width:980px) {
     .skill-container {
-        display: none;
+        display: none !important;
     }
+    .roadmap-desc {
+        display: none;
+      }
 }
