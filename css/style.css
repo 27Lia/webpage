@@ -300,6 +300,35 @@ section {
   .li a:hover {
     cursor: pointer;
   }
+
+    footer {
+    border-top: 1px solid #e4e4e4;
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+    margin: 1rem 0;
+
+  }
+
+  .footer-message {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #181818;
+    margin: 0.3rem 0.5rem;
+  }
+
+
+  .footer-contact {
+    color: #181818;
+    margin: 0 0.5rem;
+  }
+
+
+  .footer-copyright {
+    color: #181818;
+    margin: 0.8rem 0.5rem;
+}
+
+ 
 @media only screen and (min-width:1200px) {
     .inner {
         max-width: 1200px;
