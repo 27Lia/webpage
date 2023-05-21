@@ -304,31 +304,70 @@ section {
     footer {
     border-top: 1px solid #e4e4e4;
     background-color: #f8f9fa;
-    padding: 1rem 0;
-    margin: 1rem 0;
+  }
+  footer .inner {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
 
   }
-
   .footer-message {
     font-weight: bold;
     font-size: 0.9rem;
     color: #181818;
-    margin: 0.3rem 0.5rem;
   }
 
 
   .footer-contact {
     color: #181818;
-    margin: 0 0.5rem;
   }
 
 
   .footer-copyright {
     color: #181818;
-    margin: 0.8rem 0.5rem;
 }
 
+#backtotop {
+    background-color: rgb(47, 48, 89);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    position: fixed;
+    bottom:30px;
+    right: 30px;
+    transition-property: background-color, opacity, visibility;  /*각 프로퍼티마다 duration을 정할수있음*/
+    transition-duration: 0.3s, 0,5s, 0,5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;/*맨위에 보여야한다. 라는 의미로 999많이쓴다고 함*/
+}
  
+/* 아이콘 적용 방법
+1. ::after(요소 뒤에 content 추가) 가상 요소에서,
+2. content: "폰트어썸 유니코드"를 넣고
+3. font-family: FontAwesome 이라고 넣으면 됨
+*/
+
+#backtotop::after {
+    content: '\f077';
+    font-family: FontAwesome;
+    font-size: 1.5rem;
+    line-height: 40px; /*line-height를 height값으로 넣으면 가운데 위치함. */
+    color: white;
+}
+#backtotop.show:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#backtotop.show {
+    opacity: 1;
+    visibility: visible;
+    background-color: 47, 48, 49;
+}
+
+
 @media only screen and (min-width:1200px) {
     .inner {
         max-width: 1200px;
