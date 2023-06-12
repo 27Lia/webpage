@@ -19,3 +19,12 @@ function moveBackToTop() {
 window.addEventListener('scroll', checkScroll); // Scroll할 때 checkScroll함수 호출
 backtotop.addEventListener('click', moveBackToTop); // click할 때 moveBackToTop함수 호출
 
+ //---//
+ const slidePrevList  = document.getElementsByClassName('slide-prev');
+ for (let i = 0; i < slidePrevList.length; i++) {
+    //ul태그 선택
+    let classList = slidePrevList[i].parentElement.parentElement.nextElementSibling
+    let liList = classList.getElementsByTagName('li');
+
+    //카드가 ul태그 너비보다 넘치면, 왼쪽(prev)버튼을 활성화하고, 오른쪽(next)는 현재 맨 첫카드 위치이므로 비활성화
+ }
